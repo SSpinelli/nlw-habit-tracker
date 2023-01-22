@@ -11,7 +11,7 @@ export function ProgressBar(props: ProgressBarProps) {
         aria-valuenow={props.progress}
         aria-valuemax={100}
         style={{ width: `${props.progress}%` }}
-        className="h-3 rounded-xl bg-violet-600"
+        className="h-3 rounded-xl bg-violet-600 transition-all"
       ></div>
     </div>
   );
