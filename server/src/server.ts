@@ -7,7 +7,7 @@ const app = Fastify()
 
 
 app.register(cors, {
-  origin: "http://localhost:3333"
+  origin: ["http://localhost:5173", "http://localhost:3333"]
 }) // Configuração para o Frontend vai poder acessar o Backend.
 
 app.register(appRoutes)
